@@ -28,7 +28,7 @@
 	       	function myFunction() {
 	       		var editor = CKEDITOR.instances['ed'];
 	       		
-		         var noidung = editor.getData();
+		         var noidung = editor.document.getBody().getText();
 		         $.ajax({
 		        	    type : "POST",
 		        	    url : "/upload",
